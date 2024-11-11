@@ -10,15 +10,14 @@ return new class extends Migration
      * Run the migrations.
      */
     public function up()
-    {
-        Schema::create('sections', function (Blueprint $table) {
-            $table->id();
-            $table->foreignId('school_id')->constrained()->onDelete('cascade');
-            $table->string('section_name');
-            $table->timestamps();
-        });
-    }
-    
+{
+    Schema::create('terms', function (Blueprint $table) {
+        $table->id();
+        $table->foreignId('school_id')->constrained()->onDelete('cascade');
+        $table->string('term_name');
+        $table->timestamps();
+    });
+}
 
 
     /**
@@ -26,6 +25,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('sections');
+        Schema::dropIfExists('terms');
     }
 };
