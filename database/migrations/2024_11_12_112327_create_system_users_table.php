@@ -9,18 +9,13 @@ return new class extends Migration
     /**
      * Run the migrations.
      */
-    public function up()
-{
-    Schema::create('system_users', function (Blueprint $table) {
-        $table->id();
-        $table->string('username')->unique();
-        $table->string('email')->unique();
-        $table->string('password');
-        $table->enum('role', ['super_admin', 'system_admin']);
-        $table->timestamps();
-    });
-}
-
+    public function up(): void
+    {
+        Schema::create('system_users', function (Blueprint $table) {
+            $table->id();
+            $table->timestamps();
+        });
+    }
 
     /**
      * Reverse the migrations.
