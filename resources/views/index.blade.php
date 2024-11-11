@@ -143,9 +143,135 @@
 
 <!-- Footer -->
 <footer class="footer">
-    <div class="container">
-        <p class="mb-0">© 2024 Resultify. All rights reserved.</p>
-    </div>
+    <!DOCTYPE html>
+    <html lang="en">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Modern Bootstrap Footer</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+        <style>
+            /* Custom Footer Styles */
+            footer {
+                background-color: #2d3436;
+                color: #dfe6e9;
+                padding: 50px 0;
+                font-size: 14px;
+            }
+    
+            footer h5 {
+                color: #ffffff;
+                margin-bottom: 20px;
+                font-size: 18px;
+            }
+    
+            footer a {
+                color: #dfe6e9;
+                text-decoration: none;
+                transition: color 0.3s;
+            }
+    
+            footer a:hover {
+                color: #00b894;
+            }
+    
+            .social-icons a {
+                font-size: 20px;
+                margin-right: 15px;
+                color: #dfe6e9;
+                transition: color 0.3s;
+            }
+    
+            .social-icons a:hover {
+                color: #00b894;
+            }
+    
+            .footer-bottom {
+                border-top: 1px solid #444;
+                padding-top: 20px;
+                font-size: 12px;
+                text-align: center;
+            }
+    
+            /* Responsive Design */
+            @media (max-width: 768px) {
+                footer {
+                    padding: 30px 0;
+                }
+    
+                .social-icons a {
+                    margin-right: 10px;
+                }
+            }
+        </style>
+    </head>
+    
+    <body>
+    
+        <!-- Footer Section -->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <!-- Quick Links Section -->
+                    <div class="col-md-3">
+                        <h5>Quick Links</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+    
+                    <!-- Social Media Icons Section -->
+                    <div class="col-md-3">
+                        <h5>Follow Us</h5>
+                        <div class="social-icons">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+    
+                    <!-- Contact Info Section -->
+                    <div class="col-md-3">
+                        <h5>Contact Info</h5>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-map-marker-alt"></i> Address: 123 Street, City</li>
+                            <li><i class="fas fa-phone-alt"></i> Phone: +123 456 7890</li>
+                            <li><i class="fas fa-envelope"></i> Email: contact@company.com</li>
+                        </ul>
+                    </div>
+    
+                    <!-- Newsletter Section -->
+                    <div class="col-md-3">
+                        <h5>Newsletter</h5>
+                        <form>
+                            <input type="email" class="form-control" placeholder="Your email" required>
+                            <button type="submit" class="btn btn-primary mt-2">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Footer Bottom Section -->
+            <div class="footer-bottom">
+                <p>&copy; 2024 Your Company. All Rights Reserved. | Designed by You</p>
+            </div>
+        </footer>
+    
+        <!-- Bootstrap JS and dependencies -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    
+    </body>
+    
+    </html>
+    
 </footer>
 
 <!-- Bootstrap and FontAwesome Scripts -->
