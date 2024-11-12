@@ -4,9 +4,8 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-use App\Models\School;
 
-class SchoolsSeeder extends Seeder
+class ScoreSeeder extends Seeder
 {
     /**
      * Run the database seeds.
