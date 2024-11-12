@@ -34,3 +34,26 @@ Route::resource('students', StudentController::class);
 Route::resource('terms', TermController::class);
 Route::resource('scores', ScoreController::class);
 // Add other routes for Sections, Classes, etc.
+
+//to handle the logins, registration, and redirects based on user roles.
+
+// Super Admin Routes
+Route::get('/super-admin/login', [AuthController::class, 'showSuperAdminLogin'])->name('super_admin.login');
+Route::post('/super-admin/login', [AuthController::class, 'superAdminLogin']);
+
+// School Routes
+Route::get('/school/{plan}/register', [AuthController::class, 'showSchoolRegister'])->name('school.register');
+Route::post('/school/register', [AuthController::class, 'schoolRegister']);
+Route::get('/school/login', [AuthController::class, 'showSchoolLogin'])->name('school.login');
+Route::post('/school/login', [AuthController::class, 'schoolLogin']);
+
+// Teacher Routes
+Route::get('/teacher/login', [AuthController::class, 'showTeacherLogin'])->name('teacher.login');
+Route::post('/teacher/login', [AuthController::class, 'teacherLogin']);
+
+// Parent Routes
+Route::get('/parent/login', [AuthController::class, 'showParentLogin'])->name('parent.login');
+Route::post('/parent/login', [AuthController::class, 'parentLogin']);
+
+// Logout Route
+Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
